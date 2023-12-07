@@ -6,6 +6,8 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/brunomioto/DNAplot/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/brunomioto/DNAplot/actions/workflows/R-CMD-check.yaml)
+[![Codecov test
+coverage](https://codecov.io/gh/brunomioto/DNAplot/branch/master/graph/badge.svg)](https://app.codecov.io/gh/brunomioto/DNAplot?branch=master)
 <!-- badges: end -->
 
 The DNAplot package provides a simple and customizable function to
