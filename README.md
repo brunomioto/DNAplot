@@ -4,6 +4,8 @@
 # DNAplot
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/brunomioto/DNAplot/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/brunomioto/DNAplot/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The DNAplot package provides a simple and customizable function to
