@@ -1,0 +1,56 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+```{r,echo=FALSE, message=FALSE}
+devtools::load_all()
+```
+
+# DNAplot
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The DNAplot package provides a simple and customizable function to create aesthetically pleasing plots of DNA sequences. Each base is represented by a colored rectangle, allowing for easy visualization and analysis of sequence features.
+
+## Installation
+
+You can install the development version of DNAplot from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("remotes")
+remotes::install_github("brunomioto/DNAplot")
+```
+
+## Get started
+
+```{r example}
+library(DNAplot)
+```
+
+Just write a sequence and plot it!
+
+```{r, fig.width = 9, fig.height = 1, dpi=600}
+sequence <- "ACTGAAGTA"
+
+plot_dna(sequence)
+```
+
+You can also plot undefined bases
+
+```{r, fig.width = 9, fig.height = 1, dpi=600}
+sequence <- "ACYGARGTA"
+
+plot_dna(sequence)
+```
