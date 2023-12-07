@@ -11,7 +11,11 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
 Imports: 
     cli,
-    ggplot2
+    ggplot2,
+    rlang
 Config/Needs/website: rmarkdown
 URL: https://github.com/brunomioto/DNAplot, https://brunomioto.github.io/DNAplot/
 BugReports: https://github.com/brunomioto/DNAplot/issues
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

@@ -12,6 +12,7 @@
 #' plot_dna(seq)
 #'
 #' @importFrom ggplot2 ggplot aes geom_text geom_rect annotate scale_fill_manual theme_void theme element_rect coord_equal
+#' @importFrom rlang .data
 #'
 #' @export
 #'
@@ -26,16 +27,16 @@ plot_dna <- function(seq) {
     y = 0,
     b = vec
     ) |>
-    ggplot(aes(x = x,
-               y = y))+
-    geom_text(aes(label = b,
-                  y = y+0.1))+
+    ggplot(aes(x = .data$x,
+               y = .data$y))+
+    geom_text(aes(label = .data$b,
+                  y = .data$y+0.1))+
     geom_rect(
-      aes(xmin = x-0.1,
-          xmax = x+0.1,
+      aes(xmin = .data$x-0.1,
+          xmax = .data$x+0.1,
           ymin = 0,
           ymax = -0.5,
-          fill = b)
+          fill = .data$b)
     )+
     annotate(
       "rect",
