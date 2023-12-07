@@ -13,3 +13,5 @@ Imports:
     cli,
     ggplot2
 Config/Needs/website: rmarkdown
+URL: https://github.com/brunomioto/DNAplot
+BugReports: https://github.com/brunomioto/DNAplot/issues
